@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../image/register.jpg");
+    background-size: cover; 
+    height: 100vh; 
+    width: 100%; 
+    background-position: center;
+}
+
+#register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px; 
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    text-align: center; 
+    margin: 50px 0 0 200px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-title {
+    color:#D84040; 
+}
+
+
+.logo {
+    width: 145px; 
+    height: 145px;
+    margin-left: 75%;
+} 
+
+#form-section {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    line-height: 2;
+}
+
+.input-container input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 20px;
+}
+
+.submit-button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #D84040;
+    cursor: pointer;
+    color: white;
+    margin: 10px; 
+}
+.submit-button:hover {
+    background-color: #A31D1D; 
+}
+
+.sign-up-button {
+    border: none; 
+    cursor: pointer;
+    background: none; 
+    text-decoration: underline;
+    font-size: 15px;
+}
+.sign-up-button a {
+    color: #ddba68; 
+}
+
+
+#forgot-password {
+    color: #ddba68; 
+}
+
+.register-link a {
+    color: #ddba68; 
+    text-decoration: none;
+}
+
+.curved-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    background-color: #F8F2DE; 
+    border-bottom-left-radius: 50% 50%;
+}
+
+.pic {
+    width: 420px;
+    height: 420px;
+    margin: 120px 0 0 200px;
+}
+

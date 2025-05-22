@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login </title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="curved-background">
+        <div id="register-container">
+            <div id="logo-section">
+                <img class="logo" src="../image/logo.png">
+            </div>
+            <div id="form-section">
+                <form id="register-form">
+                    <h1 class="form-title"> Đăng nhập </h1>
+                    <div class="input-container">
+                        <input type="text" placeholder="Email/Số điện thoại" required>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" placeholder="Mật khẩu" required>
+                    </div>
+                    <a href="#" id="forgot-password">Quên mật khẩu?</a>
+                    <div class="terms-container">
+                        <label> 
+                            <input type="checkbox"> 
+                            Lưu phiên đăng nhập của tôi.  
+                        </label>
+                    </div>
+                    <div>
+                    <button type="submit" class="submit-button"> Đăng nhập </button>
+                    <div class="new-account">
+                        <span> Thành viên mới? </span> 
+                        <button class="sign-up-button"><a href="../singup/signup.html"> Đăng ký </a></button>
+                    </div>
+                </form>
+            </div> 
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

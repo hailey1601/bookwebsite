@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="db.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="search-box">
+        <input class="search-input" type="search" placeholder="Search..." />
+      </div>
+      <div class="account">
+        <div class="notification">
+          <i class="bx bx-bell"></i>
+        </div>
+        <div><i class="bx bx-user-circle"></i></div>
+        <div class="name-position">
+          <p class="user-name">Nguyễn Hà Anh</p>
+          <p>Manager</p>
+
+          <div class="dropdown">
+            <button class="user">Account</button>
+            <button class="logout-btn" onclick="logout()">Log out</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="menu">
+      <div>
+        <img class="logo" src="../image/logo.png" />
+      </div>
+
+      <div class="sub-menu">
+        <div id="dashboard">
+          <button class="dashboard-btn">
+            <i class="bx bxs-dashboard"></i> Dashboard
+          </button>
+        </div>
+        <div id="library">
+          <button class="library-btn">
+            <i class="bx bx-library"></i> Library
+          </button>
+        </div>
+        <div id="authors">
+          <button class="authors-btn">
+            <i class="bx bxs-group"></i> Authors
+          </button>
+        </div>
+        <div id="create">
+          <button class="create-btn"><i class="bx bx-edit"></i>Create</button>
+        </div>
+      </div>
+
+      <div class="light-dark-mode">
+        <button class="dark-mode"><i class="bx bxs-moon"></i></button>
+        <button class="light-mode-mode"><i class="bx bxs-sun"></i></button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="books-section">
+        <h2>Recent books</h2>
+        <hr />
+        <div class="book-list"></div>
+      </div>
+      
+      <div class="sidebar">
+        <div class="goals">
+          <h2>Goals</h2>
+          <hr />
+          <p><strong>Total Books Read:</strong> 2</p>
+        </div>
+        <div class="wishlist">
+          <p><strong> Wishlist: </strong></p>
+          <ul>
+            <li><input type="checkbox" /> Người đàn ông mang tên Oven</li>
+            <li><input type="checkbox" /> Hai số phận</li>
+            <li><input type="checkbox" /> Cây cam ngọt của tôi</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-2">
+      <div class="genres-section">
+        <h2>Genders</h2>
+        <hr />
+        <div class="genres-list">
+          <div class="genre-card">
+            <h4><i class="bx bxs-star bx-tada"></i> Development</h4>
+            <a href="#">Add New Books</a>
+          </div>
+          <div class="genre-card">
+            <h4><i class="bx bxs-magic-wand bx-tada"></i> Fantasty</h4>
+            <a href="#">Add New Books</a>
+          </div>
+          <div class="genre-card">
+            <h4><i class="bx bxs-rocket bx-tada"></i> Sci-fi</h4>
+            <p><strong>3</strong> Books</p>
+          </div>
+          <div class="genre-card">
+            <h4><i class="bx bx-run bx-tada"></i> Action & adventures</h4>
+            <p><strong>4</strong> Books</p>
+          </div>
+          <div class="genre-card">
+            <h4><i class="bx bxs-mask bx-tada"></i> Thriller</h4>
+            <p><strong>5</strong> Books</p>
+          </div>
+          <div class="genre-card">
+            <h4><i class="bx bxs-heart-circle bx-tada"></i> Romance</h4>
+            <a href="#">Add New Books</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="favourite">
+        <h2>Favourite</h2>
+        <hr />
+        <p><strong>Total favourite books:</strong> 2</p>
+      </div>
+    </div>
+
+    <script src="db.js"></script>
+  </body>
+</html>

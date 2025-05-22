@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="library.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="search-box">
+        <input type="search" placeholder="Search..." />
+      </div>
+      <div class="account">
+        <div class="notification">
+          <i class="bx bx-bell"></i>
+        </div>
+        <div><i class="bx bx-user-circle"></i></div>
+        <div class="name-position">
+          <p class="user-name">Nguyễn Hà Anh</p>
+          <p>Manager</p>
+
+          <div class="dropdown">
+            <button class="user">Account</button>
+            <button class="logout-btn" onclick="logout()">Log out</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="menu">
+      <div>
+        <img class="logo" src="/SPCK/image/logo.png" />
+      </div>
+
+      <div class="sub-menu">
+        <div id="dashboard">
+          <button class="dashboard-btn">
+            <i class="bx bxs-dashboard"></i> Dashboard
+          </button>
+        </div>
+        <div id="library">
+          <button class="library-btn">
+            <i class="bx bx-library"></i> Library
+          </button>
+        </div>
+        <div id="authors">
+          <button class="authors-btn">
+            <i class="bx bxs-group"></i> Authors
+          </button>
+        </div>
+        <div id="create">
+          <button class="create-btn"><i class="bx bx-edit"></i>Create</button>
+        </div>
+      </div>
+
+      <div class="light-dark-mode">
+        <button class="dark-mode"><i class="bx bxs-moon"></i></button>
+        <button classs="light-mode-mode"><i class="bx bxs-sun"></i></button>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="books-section">
+          <h2>All books</h2>
+          <hr />
+          <div class="book-list"></div>
+        </div>
+    </div>
+
+    <script src="library.js"></script>
+  </body>
+</html>
