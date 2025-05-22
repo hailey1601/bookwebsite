@@ -1,7 +1,7 @@
 document.getElementById('register-form').addEventListener('submit', function (event) {
     event.preventDefault(); 
 
-    let listUser = JSON.parse(localStorage.getItem('listUser'))
+    let listUser = JSON.parse(localStorage.getItem('listUser')) || []
 
     let emailOrPhone = document.querySelector('input[placeholder="Nhập email/số điện thoại"]').value;
     let username = document.querySelector('input[placeholder="Tên đăng nhập"]').value;
