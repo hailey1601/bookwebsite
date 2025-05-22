@@ -3,7 +3,7 @@ let listUser = JSON.parse(localStorage.getItem("listUser"));
 
 if (!currentUser) {
   alert("Please log in to use this page!");
-  window.location.href = "/SPCK/login/login.html";
+  window.location.href = "../login/login.html";
 } else {
   document.querySelector(".user-name").textContent =
     currentUser.currentUserName;
@@ -16,17 +16,17 @@ createBtn.style.borderRadius = "20px";
 
 let moveToDash = document.querySelector(".dashboard-btn");
 moveToDash.addEventListener("click", () => {
-  window.location.href = "/SPCK/dashboard/db.html";
+  window.location.href = "../dashboard/db.html";
 });
 
 let moveToLibrary = document.querySelector(".library-btn");
 moveToLibrary.addEventListener("click", () => {
-  window.location.href = "/SPCK/library/library.html";
+  window.location.href = "../library/library.html";
 });
 
 function logout() {
   localStorage.removeItem("isLoggedIn");
-  window.location.href = "/SPCK/login/login.html";
+  window.location.href = "../login/login.html";
 }
 
 let bookImage = document.getElementById("bookImage");
@@ -167,9 +167,9 @@ window.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add(`${savedTheme}-mode`);
 
   if (savedTheme === "dark") {
-    logo.src = "/SPCK/image/logo-dark.png";
+    logo.src = "../image/logo-dark.png";
   } else {
-    logo.src = "/SPCK/image/logo.png";
+    logo.src = "../image/logo.png";
   }
 });
 
@@ -189,5 +189,5 @@ change.addEventListener("click", () => {
   // Đổi logo
   let logo = document.querySelector(".logo");
   logo.src =
-    newTheme === "dark" ? "/SPCK/image/logo-dark.png" : "/SPCK/image/logo.png";
+    newTheme === "dark" ? "../image/logo-dark.png" : "../image/logo.png";
 });
